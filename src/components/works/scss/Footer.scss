@@ -1,0 +1,79 @@
+@import "../../../App.scss";
+
+.footer-container {
+    padding-bottom: 3rem;
+    position: relative;
+    width: calc(100vw - 6rem);
+    margin-top: 15rem;
+
+    .project-links {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+
+        .projects {
+            display: flex;
+            font-size: 4.5rem;
+
+            & :nth-child(2n) {
+                margin-left: 2rem;
+            }
+
+            @include respond(phone) { 
+                font-size: 2.4rem;
+            }
+        }
+
+        a {
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+
+        .footer-block {
+            display: inline-block;
+            font-size: 2rem;
+
+            a {
+                &:not(:last-child) {
+                    margin-right: 2.5rem;
+                }
+            }
+        }
+
+        .top {
+            cursor: pointer;
+        }
+
+        .icons {
+            a {
+                &:nth-child(1):hover {
+                    color:#2867B2;
+                }
+
+                &:nth-child(2):hover {
+                    color:#053eff;
+                }
+
+                &:nth-child(3):hover {
+                    color:#800080;
+                }
+
+                &:nth-child(4):hover {
+                    color:#ff3d3d;
+                }
+            }
+        }
+
+        .copyright {
+            cursor: default;
+        }
+    }
+}
+
+

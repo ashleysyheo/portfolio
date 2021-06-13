@@ -1,0 +1,53 @@
+@import '../App.scss';
+
+.information-container {
+    user-select: none;
+
+    .information {
+        position: relative;
+        top: 10rem;
+        width: 70%;
+        margin: 0 3rem;
+        font-size: 3rem;
+        z-index: 99;
+
+        @include respond(phone) {
+            top: 5rem;
+        } 
+
+        @include respond(tab-land) { 
+            width: calc(100vw - 6rem)
+        }
+
+        .information-text {
+            margin-bottom: 3rem;
+        }
+
+        .information-links {
+            display: flex;
+            width: 60%;
+            margin-top: 7rem;
+            justify-content: space-between;
+            
+            @include respond(phone) { 
+                width: calc(100vw - 5rem);
+                margin-top: 5rem;
+                font-size: 3rem;
+            }; 
+
+            a {
+                color: inherit;
+                text-decoration: underline;
+            } 
+ 
+        } 
+    }
+
+
+    #defaultCanvas0 {
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+}
+

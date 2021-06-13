@@ -1,0 +1,65 @@
+@import "../App.scss";
+
+.works-container {
+    position: relative;
+    top: 20rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 3rem;
+
+    @include respond(phone) {
+        top: 5rem;
+    }
+
+    .work {
+        margin-bottom: 8rem;
+
+        @include respond(phone) {
+            margin-bottom: 6rem;
+        } 
+    }
+
+    .work img {
+        width: calc(100vw - 6rem);
+
+        @include respond(phone) {
+            width: calc(100vw - 6rem);
+        } 
+    }
+
+    .work video {
+        width: calc( (100vw - 12rem) / 3);
+
+        @include respond(phone) {
+            width: calc(100vw - 6rem);
+        } 
+    }
+
+    .information {
+        margin-top: 1rem;
+        & * {
+            font-size: 2.4rem;
+
+            @include respond(small-laptop) { 
+                font-size: 2.2rem;
+            } 
+
+            @include respond(phone) { 
+                font-size: 3rem;
+            } 
+        }
+
+        .work-name {
+            margin-bottom: 5px;
+
+            @include respond(phone) { 
+                margin-bottom: 3px;
+            } 
+        }
+
+        .work-info {
+            color: $gray1;
+        }
+    }
+}

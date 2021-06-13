@@ -1,0 +1,47 @@
+@import "../App.scss";
+
+@font-face {
+    font-family: 'Hand';
+    src: url('../font/hand-2.otf');
+}
+
+.index {
+    overflow: hidden;
+
+    .message-container {
+        position: relative;
+        margin-left: 3rem;
+        margin-top: 7rem;
+        z-index: 2;
+
+        h2 {
+            font-family: 'Hand';
+            font-size: 5rem;
+            transform-origin: 0 0;
+            transform: rotate(-1.5deg);
+            user-select: none;
+            cursor: crosshair;
+        }
+    }
+
+    #defaultCanvas0 {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        cursor: crosshair;
+    }
+
+    .index-image {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        pointer-events: none;
+        z-index: 0;
+
+        @include respond(phone) {
+            top: 23vh;
+            width: 115vw;
+            right: 0;
+        } 
+    }
+}

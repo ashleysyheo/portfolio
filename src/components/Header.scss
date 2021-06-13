@@ -1,0 +1,49 @@
+@import "../App.scss";
+
+.header-container {
+    position: relative;
+    z-index: 9999;
+}
+
+.header {
+    font-size: 3.2rem;
+    margin: 3rem;
+
+    & > * {
+        display: inline-block;
+        vertical-align: top;  
+        margin-right: 30rem; 
+        
+        @include respond(tab-land) { 
+            margin-right: 15rem; 
+        } 
+
+        @include respond(phone) {
+            display: block;
+            margin: 0;
+            margin-bottom: 1rem;
+        } 
+    }
+
+    .name-sub {
+        margin-top: 7px;
+        font-weight: 300;
+        font-size: 2.7rem;
+        
+        & p {
+            line-height: 1.2;
+        }
+
+        & p:first-child {
+            color: #ff4040;
+        }
+
+        & p:nth-child(2) {
+            color: #4090ff;
+        }
+
+        & p:nth-child(3) {
+            color: #33d445;
+        }
+    }
+}
