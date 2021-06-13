@@ -4,6 +4,8 @@ import ProgressiveImage from 'react-progressive-image';
 import Footer from './Footer';
 
 const CodersPage = () => {
+    let notMobile = window.innerWidth > 600 ? true : false;
+
     return (
         <div className='project-container'>
             <header>
@@ -44,7 +46,7 @@ const CodersPage = () => {
                 <div className='container container2 coders-bg-1'>
                     <div className='product-container center'>
                         <div className='product product1'>
-                            <video autoPlay loop>
+                            <video autoPlay={ notMobile } loop>
                                 <source src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/coders/coders-onboarding.mp4' type='video/mp4'></source>
                             </video>
 
@@ -60,13 +62,13 @@ const CodersPage = () => {
                                 <p className='desc'>Here is the main page to your coders experience. Select a project you want to create today and get started. Also, Keep practicing to unlock more projects!</p>
                             </div>
 
-                            <video autoPlay loop>
+                            <video autoPlay={ notMobile } loop>
                                 <source src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/coders/coders-homepage.mp4' type='video/mp4'></source>
                             </video>
                         </div>
 
                         <div className='product product1'>
-                            <video autoPlay loop>
+                            <video autoPlay={ notMobile } loop>
                                 <source src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/coders/coders-concept.mp4' type='video/mp4'></source>
                             </video>
 
@@ -82,13 +84,13 @@ const CodersPage = () => {
                                 <p className='desc'>Solve sets of interactive quizzes to code your project. You don’t need to type long codes to code your project!</p>
                             </div>
 
-                            <video autoPlay loop>
+                            <video autoPlay={ notMobile } loop>
                                 <source src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/coders/coders-quiz.mp4' type='video/mp4'></source>
                             </video>
                         </div>
 
                         <div className='product product1'>
-                            <video autoPlay loop>
+                            <video autoPlay={ notMobile } loop>
                                 <source src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/coders/coders-feature.mp4' type='video/mp4'></source>
                             </video>
 

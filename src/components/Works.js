@@ -8,6 +8,8 @@ const Works = () => {
     const state = useContext(WorkContext); 
     let numOfWorks = Array.from(Array(9).keys())
 
+    let notMobile = window.innerWidth > 600 ? true : false;
+
     return (
         <div className="works-container">
             {
@@ -26,7 +28,7 @@ const Works = () => {
                     ) :
                     (
                         <div className='work' key={ idx }>
-                            <video autoPlay loop>
+                            <video autoPlay={ notMobile } loop>
                                 <source src={ work.video } type='video/mp4'></source>
                             </video>
                             <div className='information'>

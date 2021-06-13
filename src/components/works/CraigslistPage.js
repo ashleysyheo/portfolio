@@ -4,6 +4,8 @@ import ProgressiveImage from 'react-progressive-image';
 import Footer from './Footer';
 
 const CraigslistPage = () => {
+    let notMobile = window.innerWidth > 600 ? true : false;
+    
     return (
         <div className='project-container'>
             <header>
@@ -54,7 +56,7 @@ const CraigslistPage = () => {
                 <div className='container container2 craigslist-bg-1'>
                     <div className='product-container center'>
                         <div className='product product1'>
-                            <video autoPlay loop>
+                            <video autoPlay={ notMobile } loop>
                                 <source src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/craigslist-housing/craigslist-onboarding.mp4' type='video/mp4'></source>
                             </video>
 
@@ -70,13 +72,13 @@ const CraigslistPage = () => {
                                 <p className='desc'>Easily filter through different options to find the right house for you!</p>
                             </div>
 
-                            <video autoPlay loop>
+                            <video autoPlay={ notMobile } loop>
                                 <source src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/craigslist-housing/craigslist-find.mp4' type='video/mp4'></source>
                             </video>
                         </div>
 
                         <div className='product product1'>
-                            <video autoPlay loop>
+                            <video autoPlay={ notMobile } loop>
                                 <source src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/craigslist-housing/craigslist-check.mp4' type='video/mp4'></source>
                             </video>
 
@@ -92,7 +94,7 @@ const CraigslistPage = () => {
                                 <p className='desc'>Just follow the instructions, and your house will be on the market right away.</p>
                             </div>
 
-                            <video autoPlay loop>
+                            <video autoPlay={ notMobile } loop>
                                 <source src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/craigslist-housing/craigslist-post.mp4' type='video/mp4'></source>
                             </video>
                         </div>                        

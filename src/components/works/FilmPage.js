@@ -4,6 +4,8 @@ import ProgressiveImage from 'react-progressive-image';
 import Footer from './Footer';
 
 const FilmPage = () => {
+    let notMobile = window.innerWidth > 600 ? true : false;
+
     return (
         <div className='project-container'>
             <header>
@@ -22,7 +24,7 @@ const FilmPage = () => {
                     </div>
                 </div>
             </header>
-            <video autoPlay loop className='cover-image'>
+            <video autoPlay={ notMobile } loop className='cover-image'>
                 <source src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/independent-film/film-cover.mp4' type='video/mp4'></source>
             </video>
             <main>

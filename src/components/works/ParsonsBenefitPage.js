@@ -4,6 +4,8 @@ import ProgressiveImage from 'react-progressive-image';
 import Footer from './Footer';
 
 const ParsonsBenefitPage = () => {
+    let notMobile = window.innerWidth > 600 ? true : false;
+
     return (
         <div className='project-container'>
             <header>
@@ -94,7 +96,7 @@ const ParsonsBenefitPage = () => {
                         </div>
 
                         <div className='product product2'>
-                            <video autoPlay loop className='product-image2'>
+                            <video autoPlay={ notMobile } loop className='product-image2'>
                                 <source src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/parsons-benefit/benefit-program-web.mp4' type='video/mp4'></source>
                             </video>
 

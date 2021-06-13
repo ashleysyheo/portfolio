@@ -7,6 +7,8 @@ const WebsitePage = () => {
     const state = useContext(WebsiteContext); 
     let numOfWorks = Array.from(Array(5).keys())
 
+    let notMobile = window.innerWidth > 600 ? true : false;
+
     return (
         <div className='project-container'>
             <header>
@@ -28,7 +30,7 @@ const WebsitePage = () => {
                             let website = state.websites[idx];
                             let block = (
                                 <div key={ idx }>
-                                    <video autoPlay loop>
+                                    <video autoPlay={ notMobile } loop>
                                         <source src={ website.video } type='video/mp4'></source>
                                     </video>
                                     <div className='information'>

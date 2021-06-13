@@ -3,6 +3,8 @@ import './scss/Project.scss';
 import Footer from './Footer';
 
 const SpeakdrawPage = () => {
+    let notMobile = window.innerWidth > 600 ? true : false;
+
     return (
         <div className='project-container'>
             <header>
@@ -23,7 +25,7 @@ const SpeakdrawPage = () => {
                     </div>
                 </div>
             </header>
-            <video autoPlay loop className='cover-image no-margin'>
+            <video autoPlay={ notMobile } loop className='cover-image no-margin'>
                 <source src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/speak-draw/speak-draw-cover.mp4' type='video/mp4'></source>
             </video>
             <Footer title={ "Speak, Draw!" } />
