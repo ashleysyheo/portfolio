@@ -15,7 +15,6 @@ const Footer = ({ title }) => {
     let prev;
     let next;
     
-    console.log(index);
     if (index !== 0) {
         next = works[index-1];
     } else {

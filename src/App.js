@@ -14,10 +14,12 @@ import ParsonsBenefitPage from './components/works/ParsonsBenefitPage';
 import { Route } from 'react-router-dom';
 import DesignPage from './components/works/DesignPage';
 import WebsitePage from './components/works/WebsitePage';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
     return (
         <div>
+            <ScrollToTop />
             <Header />
             <Route path='/' component={ Home } exact={ true } />
             <Route path='/works' component={ Works } />
