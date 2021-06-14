@@ -57,7 +57,7 @@ const Information = () => {
                         <a className='link resume' href='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/re%CC%81sume%CC%81.pdf' target='_blank' rel="noopener noreferrer">Resume</a>
                     </span>
                     <span className='underline'>
-                        <a className='link resume' href="https://www.linkedin.com/in/ashley-h-4b1832118/" target='_blank' rel="noopener noreferrer">
+                        <a className='link resume' href="https://www.linkedin.com/in/seoyeong-ashley-h-4b1832118/" target='_blank' rel="noopener noreferrer">
                             LinkedIn
                         </a>
                     </span>
