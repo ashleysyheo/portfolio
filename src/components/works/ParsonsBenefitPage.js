@@ -101,10 +101,9 @@ const ParsonsBenefitPage = () => {
                             </video>
 
                             <div className='product-desc white-txt center'>
-                                <a href='https://ashleysyheo.github.io/parsons-benefit-2021/' target='_blank' rel='noopener noreferrer' className='white-txt'>
+                                <a href='https://www.newschool.edu/Parsons-Benefit-2021/' target='_blank' rel='noopener noreferrer' className='white-txt'>
                                     <p className='desc'>Visit Digital Program</p>
                                 </a>
-                                <p className='caption center'>Link to update after June 15</p>
                             </div>
                         </div>
                     </div>
