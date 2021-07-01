@@ -11,7 +11,7 @@ const CodersPage = () => {
             <header>
                 <h1 className='project-title'>Coders</h1>
                 <div className='project-info-container'>
-                    <p className='project-desc'>
+                    <p className='project-desc coders-desc'>
                         With the recent growth in developer roles in the job industry, many people are switching 
                         to the tech industry. However, what happens when you don’t have an aptitude for coding? 
                         With coders, Korean high school and college students can easily experience coding and 
@@ -23,6 +23,8 @@ const CodersPage = () => {
                         <h4 className='project-info heading'>Role</h4>
                         <h4 className='project-info info'>User Research, Visual Design</h4>
                     </div>
+                    <img className="project-logo" src="https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/coders/UX_Design_Awards_Nominated_2021_RGB_Logo.svg" alt="uxd awards"></img>
+
                 </div>
             </header>
             <ProgressiveImage src='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/coders/coders-cover.svg' placeholder="https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/works/coders/coders-cover-small.png">
