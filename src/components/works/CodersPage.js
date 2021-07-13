@@ -35,7 +35,7 @@ const CodersPage = () => {
                 <div className='container container1 center'>
                     <div className='problem'>
                         <h4 className='heading'>The Problem</h4>
-                        <p className='desc'>If Korean high school and college students aren't sufficient in English or don't have access to hagwons, have difficulty in studying coding, understanding how it works, getting practical information needed to create what they want.</p>
+                        <p className='desc'>If Korean high school and college students aren't proficient in English or don't have access to hagwons, have difficulty in studying coding, understanding how it works, getting practical information needed to create what they want.</p>
                     </div>
                     
                     <div className='solution'>
