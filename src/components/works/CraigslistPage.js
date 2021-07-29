@@ -119,8 +119,8 @@ const CraigslistPage = () => {
                             <h4 className='heading2'>Key Insights</h4>
                             <ol className='no-bullets'>
                                 <li>Users struggle with finding apartment from the very beginning, such as finding the right platform to rent a house</li>
-                                {/* <li>Books are boring and wordy and hagwons only focus on teaching as quickly as possible</li>
-                                <li>Students have a hard time figuring out where to start and what they need to know to create real projects</li> */}
+                                <li>It’s difficult for users to rent apartment as an international student or foreigner</li>
+                                <li>Renting apartments at Craigslist housing is easier and more negotiable</li>
                             </ol>
                         </div>
                     </div>
