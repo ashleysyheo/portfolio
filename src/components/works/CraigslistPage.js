@@ -84,7 +84,7 @@ const CraigslistPage = () => {
 
                             <div className='product-desc white-txt'>
                                 <h4 className='heading'>Check if it's the one</h4>
-                                <p className='desc'>Check its amenities and how far the apartment is from your college or workplace! Also, don’t forget to connect. You can easily message the tenant owner by clicking the message icon.</p>
+                                <p className='desc'>Check its amenities and how far the apartment is from your college or workplace! Also, don’t forget to connect. You can easily message the owner by clicking the message icon.</p>
                             </div>
                         </div>
 
