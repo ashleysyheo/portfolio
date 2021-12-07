@@ -3,6 +3,14 @@ import { createContext } from 'react';
 const WebsiteContext = createContext({ websites : [
     {
         year: '2020',
+        title: '(simple web)',
+        type: 'Website, Extension',
+        url: 'https://simple-web.xyz/',
+        thumb: 'video',
+        video: 'https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/images/simple-web-thumb.mp4',
+    },
+    {
+        year: '2020',
         title: 'Lumière',
         url: 'https://lumiere.glitch.me/',
         video: 'https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/images/website-thumb.mp4',

@@ -1,25 +1,26 @@
 import React, { useContext } from 'react';
-import WebsiteContext from '../../contexts/websites';
+import ProgressiveImage from 'react-progressive-image';
+import ThesisContext from '../../contexts/thesis';
 import './scss/Project.scss';
 import Footer from './Footer';
 
-const WebsitePage = () => {
-    const state = useContext(WebsiteContext); 
-    let numOfWorks = Array.from(Array(6).keys())
+const ThesisPage = () => {
+    const state = useContext(ThesisContext); 
+    let numOfWorks = Array.from(Array(2).keys())
 
     let notMobile = window.innerWidth > 600 ? true : false;
 
     return (
         <div className='project-container'>
             <header>
-                <h1 className='project-title'>Website Collection</h1>
+                <h1 className='project-title'>Thesis Experimentations</h1>
                 <div className='project-info-container'>
                     <p className='project-desc'>
-                        A collection of websites I've designed and coded over the years.
+                        Thesis explorations that focus on the streets of Manhattan. 
                     </p>
                     <div className='project-infos'>
                         <h4 className='project-info heading'>Time</h4>
-                        <h4 className='project-info info'>Nov 2019 – Jan 2020</h4>
+                        <h4 className='project-info info'>Fall 2021</h4>
                     </div>
                 </div>
             </header>
@@ -27,12 +28,12 @@ const WebsitePage = () => {
                 <div className='websites-container'>
                     {
                         numOfWorks.map(idx => {
-                            let website = state.websites[idx];
+                            let website = state.thesis[idx];
                             let block = (
                                 <div key={ idx }>
-                                    <video autoPlay={ notMobile } loop>
-                                        <source src={ website.video } type='video/mp4'></source>
-                                    </video>
+                                    <ProgressiveImage src={ website.largeImg } placeholder={ website.smallImg }>
+                                        {(src, loading) => <img className='thesis-thumb-image' style={{ filter: loading ? "blur(10px)" : 'none', transition: loading ? "none" : "filter 0.2s ease-out" }} src={src} alt={ website.title } />}
+                                    </ProgressiveImage>
                                     <div className='information'>
                                         <div className='website-name'>{ website.title }</div>
                                         <div className='website-info'>{ website.year }</div>
@@ -52,9 +53,9 @@ const WebsitePage = () => {
             
             
 
-            <Footer title={ "Website Collection" } />
+            <Footer title={ "Thesis Experimentations" } />
         </div>
     );
 };
 
-export default WebsitePage;
+export default ThesisPage;

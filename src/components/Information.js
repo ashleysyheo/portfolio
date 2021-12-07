@@ -54,16 +54,11 @@ const Information = () => {
                 </div>
                 <div className='information-links'>
                     <span className='underline'>
-                        <a className='link resume' href='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/re%CC%81sume%CC%81.pdf' target='_blank' rel="noopener noreferrer">Resume</a>
+                        <a className='link resume' href='https://ashleyheo-portfolio.s3.ap-northeast-2.amazonaws.com/HEO_ASHLEY_RESUME.pdf' target='_blank' rel="noopener noreferrer">Resume</a>
                     </span>
                     <span className='underline'>
                         <a className='link resume' href="https://www.linkedin.com/in/seoyeong-ashley-h-4b1832118/" target='_blank' rel="noopener noreferrer">
                             LinkedIn
-                        </a>
-                    </span>
-                    <span className='underline'>
-                        <a className='link resume' href="https://www.behance.net/ashleysyheo" target='_blank' rel="noopener noreferrer">
-                            Behance
                         </a>
                     </span>
                     <span className='underline'>

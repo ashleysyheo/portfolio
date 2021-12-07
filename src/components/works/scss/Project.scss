@@ -109,6 +109,14 @@
     }
 
     main {
+        .thesis-thumb-image {
+            width: calc( (100vw - 12rem) / 3);
+
+            @include respond(phone) {
+                width: calc(100vw - 6rem);
+            } 
+        }
+
         position: relative;
 
         .center {

@@ -66,9 +66,6 @@ const Footer = ({ title }) => {
                     <a href='https://www.linkedin.com/in/ashley-h-4b1832118/' target='_blank' rel="noopener noreferrer">
                         <FaLinkedinIn className='icon' />
                     </a>
-                    <a href='https://www.behance.net/ashleysyheo' target='_blank' rel="noopener noreferrer">
-                        <FaBehance className='icon' />
-                    </a>
                     <a href='https://github.com/ashleysyheo/' target='_blank' rel="noopener noreferrer">
                         <FaGithub className='icon' />
                     </a>
