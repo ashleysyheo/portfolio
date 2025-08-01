@@ -1,560 +1,570 @@
-@import "../../../App.scss";
+@import '../../../App.scss';
 
 .project-container {
-    position: relative;
-    top: 7rem;
-    margin: 3rem;
+  position: relative;
+  top: 7rem;
+  margin: 3rem;
 
-    @include respond(phone) {
-        top: 5rem;
+  @include respond(phone) {
+    top: 5rem;
+  }
+
+  .image {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  header {
+    margin-bottom: 7rem;
+
+    .project-title {
+      font-size: 7rem;
+      font-weight: 500;
+      margin-bottom: 3.5rem;
+
+      @include respond(tab-land) {
+        font-size: 6rem;
+        margin-bottom: 3rem;
+      }
+
+      @include respond(phone) {
+        margin-bottom: 2.5rem;
+      }
     }
 
-    .image {
-        width: 100%;
+    .project-info-container {
+      display: flex;
 
-        &:not(:last-child) {
-            margin-bottom: 5rem;
+      @include respond(phone) {
+        flex-wrap: wrap;
+      }
+
+      .project-desc {
+        font-size: 2.4rem;
+        line-height: 1.4;
+        width: 60%;
+        margin-right: 20rem;
+
+        @include respond(phone) {
+          width: calc(100vw - 6rem);
+          margin-right: 0;
+          font-size: 3rem;
+          margin-bottom: 5rem;
         }
-    }
+      }
 
-    header {
-        margin-bottom: 7rem;
+      .coders-desc {
+        margin-right: 16rem;
+      }
 
-        .project-title {
-            font-size: 7rem;
-            font-weight: 500;
-            margin-bottom: 3.5rem;
+      .project-infos {
+        .project-info {
+          font-size: 2rem;
+          font-weight: 500;
+          margin-bottom: 7px;
 
-            @include respond(tab-land) { 
-                font-size: 6rem;
-                margin-bottom: 3rem;
-            }
-
-            @include respond(phone) { 
-                margin-bottom: 2.5rem;
-            }
-        }
-
-        .project-info-container {
-            display: flex;
-
-            @include respond(phone) {
-                flex-wrap: wrap;
-            }
-
-            .project-desc {
-                font-size: 2.4rem;
-                line-height: 1.4;
-                width: 60%;
-                margin-right: 20rem;
-
-                @include respond(phone) {
-                    width: calc(100vw - 6rem);
-                    margin-right: 0;
-                    font-size: 3rem;
-                    margin-bottom: 5rem;
-                }
-            }
-
-            .coders-desc {
-                margin-right: 16rem;
-            }
-
-            .project-infos {
-                .project-info {
-                    font-size: 2rem;
-                    font-weight: 500;
-                    margin-bottom: 7px;
-
-                    @include respond(phone) {
-                        width: calc(100vw - 6rem);
-                        margin-bottom: 5px;
-                        font-size: 2.8rem;
-                        margin-bottom: 1rem;
-                    }
-                }
-
-                .heading {
-                    font-weight: 600;
-                }
-
-                .info {
-                    color: $gray1;
-                    font-weight: normal;
-                }
-
-                & :nth-child(2) {
-                    margin-bottom: 2.4rem;
-                }
-            }
-
-            a {
-                text-decoration: underline;
-            }
-        }
-
-        .project-logo {
-            width: 27mm;
-            margin-left: 7rem;
-        }
-    }
-
-    .cover-image {
-        width: calc(100vw - 6rem);
-        margin-bottom: 15rem;
-
-        @include respond(phone) { 
-            margin-bottom: 7rem;
-        }
-    }
-
-    main {
-        .thesis-thumb-image {
-            width: calc( (100vw - 12rem) / 3);
-
-            @include respond(phone) {
-                width: calc(100vw - 6rem);
-            } 
-        }
-
-        position: relative;
-
-        .center {
-            position: relative;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 65%;
-
-            @include respond(tab-land) { 
-                width: calc(100vw - 6rem);
-            } 
+          @include respond(phone) {
+            width: calc(100vw - 6rem);
+            margin-bottom: 5px;
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+          }
         }
 
         .heading {
-            font-size: 4.5rem;
-            font-weight: 500;
-            margin-bottom: 3.6rem;
-
-            @include respond(tab-land) { 
-                font-size: 3.6rem;
-                margin-bottom: 3rem;
-            } 
-
-            @include respond(phone) { 
-                font-size: 5rem;
-            }
+          font-weight: 600;
         }
 
-        .heading2 {
-            font-size: 2.4rem;
-            font-weight: 600;
-            margin-bottom: 3.6rem;
-
-            @include respond(phone) { 
-                font-size: 3.2rem;
-            }
+        .info {
+          color: $gray1;
+          font-weight: normal;
         }
 
-        .desc {
-            font-size: 2rem;
-            line-height: 1.5;
+        & :nth-child(2) {
+          margin-bottom: 2.4rem;
+        }
+      }
 
-            @include respond(phone) { 
-                font-size: 2.8rem;
-            }
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    .project-logo {
+      width: 27mm;
+      margin-left: 7rem;
+    }
+  }
+
+  .cover-image {
+    width: calc(100vw - 6rem);
+    margin-bottom: 15rem;
+
+    @include respond(phone) {
+      margin-bottom: 7rem;
+    }
+  }
+
+  main {
+    .thesis-thumb-image {
+      width: calc((100vw - 12rem) / 3);
+
+      @include respond(phone) {
+        width: calc(100vw - 6rem);
+      }
+    }
+
+    position: relative;
+
+    .center {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 65%;
+
+      @include respond(tab-land) {
+        width: calc(100vw - 6rem);
+      }
+    }
+
+    .heading {
+      font-size: 4.5rem;
+      font-weight: 500;
+      margin-bottom: 3.6rem;
+
+      @include respond(tab-land) {
+        font-size: 3.6rem;
+        margin-bottom: 3rem;
+      }
+
+      @include respond(phone) {
+        font-size: 5rem;
+      }
+    }
+
+    .heading2 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-bottom: 3.6rem;
+
+      @include respond(phone) {
+        font-size: 3.2rem;
+      }
+    }
+
+    .desc {
+      font-size: 2rem;
+      line-height: 1.5;
+
+      @include respond(phone) {
+        font-size: 2.8rem;
+      }
+    }
+
+    .container {
+      margin-bottom: 15rem;
+
+      @include respond(phone) {
+        margin-bottom: 7rem;
+      }
+    }
+
+    .container1 {
+      .problem {
+        p {
+          margin-bottom: 7rem;
+        }
+      }
+
+      .solution {
+        h5 {
+          font-weight: 600;
+          font-size: 2.2rem;
+          margin-bottom: 1rem;
+
+          @include respond(phone) {
+            font-size: 3.2rem;
+          }
+        }
+      }
+    }
+
+    .container2 {
+      position: relative;
+      width: 100vw;
+      left: -3rem;
+
+      .product-container {
+        padding-top: 13rem;
+        width: 65%;
+        margin-left: 2rem;
+
+        @include respond(tab-land) {
+          width: 80vw;
         }
 
-        .container {
+        @include respond(phone) {
+          width: calc(100vw - 6rem);
+          margin-left: 0;
+          padding-top: 3rem;
+        }
+
+        .product {
+          position: relative;
+          width: 100%;
+          padding-bottom: 10rem;
+
+          video {
+            width: 45%;
+            height: auto;
+            @include respond(phone) {
+              width: calc(100vw - 6rem);
+            }
+          }
+
+          &-desc {
+            width: 50%;
+            height: unset;
+
+            @include respond(phone) {
+              width: calc(100vw - 6rem);
+            }
+          }
+
+          h4 {
+            margin-top: 3rem;
+            font-weight: 700;
+
+            @include respond(phone) {
+              margin-top: 0;
+            }
+          }
+
+          p {
             margin-bottom: 15rem;
 
-            @include respond(phone) { 
-                margin-bottom: 7rem;
+            @include respond(phone) {
+              margin-bottom: 0rem;
             }
-        }
+          }
 
-        .container1 {
-            .problem {
-                p {
-                    margin-bottom: 7rem;
-                }
-            }
-
-            .solution {
-                h5 {
-                    font-weight: 600;
-                    font-size: 2.2rem;
-                    margin-bottom: 1rem;
-
-                    @include respond(phone) { 
-                        font-size: 3.2rem;
-                    }
-                }
-            }
-        }
-
-        .container2 {
+          h4,
+          p {
             position: relative;
-            width: 100vw;
-            left: -3rem;
+            bottom: 0;
+          }
 
-            .product-container {
-                padding-top: 13rem;
-                width: 65%;
-                margin-left: 2rem;
+          &:last-child {
+            padding-bottom: 13rem;
 
-                @include respond(tab-land) { 
-                    width: 80vw;
-                } 
-
-                @include respond(phone) { 
-                    width: calc(100vw - 6rem);
-                    margin-left: 0;
-                    padding-top: 3rem;
-                }
-
-                .product {
-                    position: relative;
-                    width: 100%;
-                    padding-bottom: 10rem;
-
-                    video {
-                        width: 45%;
-                        height: auto;
-                        @include respond(phone) { 
-                            width: calc(100vw - 6rem);
-                        }
-                    }
-
-                    &-desc {
-                        width: 50%;
-                        height: unset;
-                        
-                        @include respond(phone) { 
-                            width: calc(100vw - 6rem);
-                        }
-                    }
-
-                    h4 {
-                        margin-top: 3rem;
-                        font-weight: 700;
-
-                        @include respond(phone) { 
-                            margin-top: 0;
-                        }
-                    }
-
-                    p {
-                        margin-bottom: 15rem;
-
-                        @include respond(phone) { 
-                            margin-bottom: 0rem;
-                        }
-                    }
-
-                    h4,
-                    p {
-                        position: relative;
-                        bottom: 0;
-                    }
-
-                    &:last-child {
-                        padding-bottom: 13rem;
-
-                        @include respond(phone) { 
-                            padding-bottom: 7rem;
-                        }
-                    }
-                }
-
-                .product1 {
-                    display: flex;
-                    justify-content: space-between;
-                    flex-direction: row;
-                    align-items: flex-end;
-
-                    @include respond(phone) { 
-                        display: block;
-
-                        &:nth-child(2n) {
-                            p {
-                                margin-bottom: 2rem;
-                            }
-
-                            padding-bottom: 4rem;
-                        }
-                    }
-                }
-
-                .product2 {
-                    position: relative;
-                    padding-bottom: 0;
-
-                    p {
-                        text-align: center;
-                        font-size: 2.4rem;
-                    }
-
-                    .product-image1 {
-                        width: 45%;
-                    }
-
-                    .product-image2 {
-                        width: 100%;
-                    }
-
-                    .product-image3 {
-                        position: relative;
-                        width: 40%;
-                        z-index: 3;
-                        pointer-events: none;
-                    }
-
-                    video {
-                        margin-top: 10rem;
-                    }
-
-                    .caption {
-                        color: $gray1;
-                        margin-top: 1rem;
-                        text-align: center;
-                        font-size: 1.6rem;
-                    }
-
-                    &:nth-child(2) {
-                        p:nth-child(1) {
-                            margin-top: 4rem;
-                            margin-bottom: 0;
-                        }
-                    }
-
-                    &:last-child {
-                        padding-bottom: 15rem;
-                    }
-
-                    a {
-                        text-decoration: underline;
-                    }
-                }
+            @include respond(phone) {
+              padding-bottom: 7rem;
             }
+          }
         }
 
-        .container3 {
+        .product1 {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: flex-end;
+
+          @include respond(phone) {
+            display: block;
+
+            &:nth-child(2n) {
+              p {
+                margin-bottom: 2rem;
+              }
+
+              padding-bottom: 4rem;
+            }
+          }
+        }
+
+        .product2 {
+          position: relative;
+          padding-bottom: 0;
+
+          p {
+            text-align: center;
+            font-size: 2.4rem;
+          }
+
+          .product-image1 {
+            width: 45%;
+          }
+
+          .product-image2 {
+            width: 100%;
+          }
+
+          .product-image3 {
             position: relative;
+            width: 40%;
+            z-index: 3;
+            pointer-events: none;
+          }
 
-            // interview-container
-            .interview-container {
-                margin: 10rem 0;
+          video {
+            margin-top: 10rem;
+          }
 
-                @include respond(phone) { 
-                    margin: 7rem 0;
-                }
+          .caption {
+            color: $gray1;
+            margin-top: 1rem;
+            text-align: center;
+            font-size: 1.6rem;
+          }
 
-                .question {
-                    font-size: 2.2em;
-                    margin-bottom: 2rem;
-                    font-weight: 500;
-
-                    @include respond(phone) { 
-                        font-size: 2.4rem;
-                    }
-                }
-
-                .answer {
-                    font-size: 3.2rem;
-                    line-height: 1.4;
-                    font-weight: 600;
-                    margin-bottom: 1rem;
-                }
-
-                .demographic {
-                    margin-bottom: 7rem;
-                    color: $gray1;
-
-                    @include respond(phone) { 
-                        font-size: 2.2rem;
-                    }
-                }
-
-                & :last-child {
-                    margin-bottom: 0;
-                }
+          &:nth-child(2) {
+            p:nth-child(1) {
+              margin-top: 4rem;
+              margin-bottom: 0;
             }
+          }
 
-            .target-container {
-                margin-bottom: 10rem;
-            }
+          &:last-child {
+            padding-bottom: 15rem;
+          }
 
-            .insight-container {
-                position: relative;
-                left: -3rem;
-                width: 100vw;
-                margin-bottom: 10rem;
-
-                @include respond(phone) { 
-                    margin-bottom: 7rem;
-                }
-
-                .insights {
-                    padding: 10rem 0;
-                    padding-left: 2rem;
-
-                    @include respond(tab-land) { 
-                        padding-left: 0;
-                    } 
-
-                    @include respond(phone) { 
-                        padding: 7rem 0;
-                    }
-
-                    ol {
-                        // list-style: none;
-                        list-style-position: inside;
-                        font-size: 2.8rem;
-
-                        & :not(:last-child) {
-                            margin-bottom: 3.2rem;
-                        }
-                    }
-                }
-            }
-
-            .persona-container {
-                & .desc {
-                    margin-bottom: 7rem;
-                }
-
-                .persona {
-                    width: 100%;
-                    border-radius: 2rem;
-
-                    &1 {
-                        margin-bottom: 5rem;
-                    }
-                }
-            }
-
-            .journey-container, .ia-container, .flow-container {
-                margin-top: 10rem;
-            }
-
-            
-            .journey-map, .site-map, .user-flow {
-                width: 100%;
-            }
-
+          a {
+            text-decoration: underline;
+          }
         }
-
-        iframe {
-            position: relative;
-            left: -3rem;
-            width: 100vw;
-            height: calc(100vw/1.77);
-        }
-
-        .poster-container {
-            display: flex;
-            justify-content: space-between;
-
-            img {
-                align-self: start;
-                width: calc((100vw - 18rem) / 5);
-            }
-        }
-
-        .coders-bg-1 {
-            background-color: #95d2fe;
-
-            @include respond(small-laptop) { 
-                background-color: #91cffc;
-            } 
-        }
-
-        .coders-bg-2 {
-            background-color: #E4F2FF;
-        }
-        
-        .coders-color {
-            color: #0D6EFF;
-        }
-
-        .craigslist-bg-1 {
-            background-color: #9800cc;
-
-            @include respond(small-laptop) { 
-                background-color: #8200be;
-            } 
-        }
-
-        .craigslist-bg-2 {
-            background-color: #F8EDFD;
-        }
-
-        .craigslist-color {
-            color: #9800cc;
-        }
-
-
-        .websites-container {
-            position: relative;
-            display: flex;
-            flex-wrap: wrap;
-
-            .website {
-                margin-bottom: 8rem;
-                margin-right: 2.9rem;
-
-                &:nth-child(3n) {
-                    margin-right: 0;
-                }
-
-                @include respond(phone) {
-                    margin-bottom: 6rem;
-                } 
-            }
-
-            .website video {
-                width: calc( (100vw - 12rem) / 3);
-
-                @include respond(phone) {
-                    width: calc(100vw - 6rem);
-                } 
-            }
-
-            .information {
-                margin-top: 1rem;
-                & * {
-                    font-size: 2.4rem;
-
-                    @include respond(small-laptop) { 
-                        font-size: 2.2rem;
-                    } 
-
-                    @include respond(phone) { 
-                        font-size: 3rem;
-                    } 
-                }
-
-                .website-name {
-                    margin-bottom: 5px;
-
-                    @include respond(tab-land) { 
-                        width: calc( (100vw - 12rem) / 3);
-                    } 
-
-                    @include respond(phone) { 
-                        margin-bottom: 3px;
-                        width: calc(100vw - 6rem);
-                    } 
-                }
-
-                .website-info {
-                    color: $gray1;
-                }
-            }
-        }
+      }
     }
 
-    .no-margin {
-        margin: 0;
+    .container3 {
+      position: relative;
+
+      // interview-container
+      .interview-container {
+        margin: 10rem 0;
+
+        @include respond(phone) {
+          margin: 7rem 0;
+        }
+
+        .question {
+          font-size: 2.2em;
+          margin-bottom: 2rem;
+          font-weight: 500;
+
+          @include respond(phone) {
+            font-size: 2.4rem;
+          }
+        }
+
+        .answer {
+          font-size: 3.2rem;
+          line-height: 1.4;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+
+        .demographic {
+          margin-bottom: 7rem;
+          color: $gray1;
+
+          @include respond(phone) {
+            font-size: 2.2rem;
+          }
+        }
+
+        & :last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .target-container {
+        margin-bottom: 10rem;
+      }
+
+      .insight-container {
+        position: relative;
+        left: -3rem;
+        width: 100vw;
+        margin-bottom: 10rem;
+
+        @include respond(phone) {
+          margin-bottom: 7rem;
+        }
+
+        .insights {
+          padding: 10rem 0;
+          padding-left: 2rem;
+
+          @include respond(tab-land) {
+            padding-left: 0;
+          }
+
+          @include respond(phone) {
+            padding: 7rem 0;
+          }
+
+          ol {
+            // list-style: none;
+            list-style-position: inside;
+            font-size: 2.8rem;
+
+            & :not(:last-child) {
+              margin-bottom: 3.2rem;
+            }
+          }
+        }
+      }
+
+      .persona-container {
+        & .desc {
+          margin-bottom: 7rem;
+        }
+
+        .persona {
+          width: 100%;
+          border-radius: 2rem;
+
+          &1 {
+            margin-bottom: 5rem;
+          }
+        }
+      }
+
+      .journey-container,
+      .ia-container,
+      .flow-container {
+        margin-top: 10rem;
+      }
+
+      .journey-map,
+      .site-map,
+      .user-flow {
+        width: 100%;
+      }
     }
+
+    iframe {
+      position: relative;
+      left: -3rem;
+      width: 100vw;
+      height: calc(100vw / 1.77);
+    }
+
+    .poster-container {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        align-self: start;
+        width: calc((100vw - 18rem) / 5);
+      }
+    }
+
+    .coders-bg-1 {
+      background-color: #95d2fe;
+
+      @include respond(small-laptop) {
+        background-color: #91cffc;
+      }
+    }
+
+    .coders-bg-2 {
+      background-color: #e4f2ff;
+    }
+
+    .coders-color {
+      color: #0d6eff;
+    }
+
+    .craigslist-bg-1 {
+      background-color: #9800cc;
+
+      @include respond(small-laptop) {
+        background-color: #8200be;
+      }
+    }
+
+    .craigslist-bg-2 {
+      background-color: #f8edfd;
+    }
+
+    .craigslist-color {
+      color: #9800cc;
+    }
+
+    .websites-container {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+
+      .website {
+        margin-bottom: 8rem;
+        margin-right: 2.9rem;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+
+        @include respond(phone) {
+          margin-bottom: 6rem;
+        }
+      }
+
+      .website video {
+        width: calc((100vw - 12rem) / 3);
+
+        @include respond(phone) {
+          width: calc(100vw - 6rem);
+        }
+      }
+
+      .website img {
+        width: calc((100vw - 12rem) / 3);
+        aspect-ratio: 1061 / 672;
+
+        @include respond(phone) {
+          width: calc(100vw - 6rem);
+        }
+      }
+
+      .information {
+        margin-top: 1rem;
+        & * {
+          font-size: 2.4rem;
+
+          @include respond(small-laptop) {
+            font-size: 2.2rem;
+          }
+
+          @include respond(phone) {
+            font-size: 3rem;
+          }
+        }
+
+        .website-name {
+          margin-bottom: 5px;
+
+          @include respond(tab-land) {
+            width: calc((100vw - 12rem) / 3);
+          }
+
+          @include respond(phone) {
+            margin-bottom: 3px;
+            width: calc(100vw - 6rem);
+          }
+        }
+
+        .website-info {
+          color: $gray1;
+        }
+      }
+    }
+  }
+
+  .no-margin {
+    margin: 0;
+  }
 }
